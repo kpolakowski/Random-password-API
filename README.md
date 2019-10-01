@@ -1,5 +1,4 @@
-# Documentation
-## Installation
+# Installation
 In order to run this project, execute in the project directory following commands:
 
 `npm install`
@@ -9,7 +8,7 @@ In order to run this project, execute in the project directory following command
 This will run the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Endpoint
+# Endpoint
 In order to get random password with all option set as default you just need to send **GET** request to the folowing endpoint:
 ```
 /api
