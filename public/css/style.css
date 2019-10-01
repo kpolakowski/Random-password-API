@@ -1,0 +1,85 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body input#password {
+  border: 3px solid #222;
+  font-size: 2em;
+  text-align: center;
+  outline: none;
+}
+
+body div.password {
+  position: relative;
+  display: inline-block;
+}
+
+body div.password button#copy {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: none;
+  border: 0;
+  font-size: 2em;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  outline: none;
+}
+
+body div.password button#copy:hover {
+  opacity: .5;
+}
+
+body div.password p {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+body div.password p.visible {
+  opacity: 1;
+}
+
+body #options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em 2em;
+  margin-top: -100px;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.25);
+}
+
+body #options h3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: .5em;
+}
+
+body #options label {
+  display: block;
+}
+
+body #options input[type=text], body #options input[type=number] {
+  display: block;
+}
+
+body #options input {
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  padding: .5em 1em;
+  margin: .5em 0;
+}
+/*# sourceMappingURL=style.css.map */

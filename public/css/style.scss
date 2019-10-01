@@ -1,0 +1,62 @@
+*{
+box-sizing: border-box;
+}
+body{
+    margin:0;
+    input#password{
+        border:3px solid #222;
+        font-size: 2em;
+        text-align: center;
+        outline:none;
+    }
+    div.password{
+        position: relative;
+        display: inline-block;
+        button#copy{
+            position: absolute;
+            right:100%; top:50%;
+            transform: translate(-50%,-50%);
+            background: none;
+            border:0;
+            font-size: 2em;
+            transition: opacity .5s ease;
+            outline:none;
+            &:hover{
+                opacity: .5;
+            }
+        }
+        p{
+            position: absolute;
+            opacity:0;
+            transition: opacity .5s ease;
+            &.visible{
+                opacity: 1;
+            }
+        }
+    }
+    #options{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap:1em 2em;
+        margin-top:-100px;
+        border-radius: 1em;
+        box-shadow:0 10px 30px -10px rgba(#000,.25);
+        h3{
+            grid-column: 1/4;
+            border-bottom: 1px solid #ddd;
+            padding-bottom:.5em;
+        }
+        label{
+            display: block;
+        }
+        input[type=text],input[type=number]{
+            display: block;
+        }
+        input{
+            margin-bottom:1em;
+            border:1px solid #ccc;
+            padding:.5em 1em;
+            margin:.5em 0;
+        }
+    }
+}

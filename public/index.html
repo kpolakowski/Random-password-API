@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random password generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section id="result" class="jumbotron bg-dark">
+        <div class="container text-center my-5">
+            <h1 class="text-bold text-warning">Random password generator</h1>
+            <p class="lead text-light">Generate your password with one click</p>
+            <div class="mt-5">
+                <div class="password">
+                    <input class="bg-secodnary inline-form-control p-4 mr-3 rounded" size="40" type="text" id="password">
+                    <button type="button" id="copy" onclick="copy()"><i class="fas fa-copy text-light"></i></button>
+                    <p class="text-light my-2">Text copied to clipboard</p>
+                </div>
+                <button class="btn btn-warning text-dark text-uppercase font-weight-bold p-3" type="button" onclick="generate()">Generate</button>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="options" class="p-5 mb-5 bg-light">
+            <h3>Options</h3>
+            <div>
+                <label>Min. length<input type="number" value="6" id="minLength" placeholder="default - 6"></label>
+                <label>Max. length<input type="number" value="12" id="maxLength" placeholder="default - 12"></label>
+                <label><input type="checkbox" class="mr-2" id="caseSensitive" checked>Case sensitive</label>
+            </div>
+            <div>
+                <label><input type="checkbox" id="numbersIncluded" class="mr-2" checked>Numbers included</label>
+                <label>How many numbers?<input type="number" value="2" id="howManyNumbers" placeholder="default - 2"></label>
+            </div>
+            <div>
+                <label><input type="checkbox" class="mr-2" id="specialCharsIncluded">Special characters included</label>
+                <label>How many special characters?<input type="number" value="1" id="howManySpecialChars" placeholder="default - 1"></label>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container" id="documentation">
+        <p class="text-center">Please visit <a class="text-danger" href="https://github.com/kpolakowski/Random-password-API">documentation</a> on github to see all available options.</p>
+    </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
