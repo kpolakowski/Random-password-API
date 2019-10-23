@@ -1,5 +1,5 @@
 # Installation
-In order to run this project, execute in the project directory following commands:
+In order to run this project, clone it first, then execute in the project directory following commands:
 
 `npm install`
 
